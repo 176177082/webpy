@@ -11,6 +11,6 @@ webdir = '.'
 port = 80
 
 os.chdir(webdir)
-srvraddr = ('', port)111
+srvraddr = ('', port)
 srvrobj = HTTPServer(srvraddr, CGIHTTPRequestHandler)
 srvrobj.serve_forever()
